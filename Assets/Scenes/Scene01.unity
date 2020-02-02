@@ -398,6 +398,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1227435122}
   - component: {fileID: 1227435121}
+  - component: {fileID: 1227435123}
+  - component: {fileID: 1227435125}
+  - component: {fileID: 1227435124}
   m_Layer: 0
   m_Name: AR Session Origin
   m_TagString: Untagged
@@ -433,3 +436,113 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1227435123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1227435120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1760703bbd54c04488a8d10600262ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PlanePrefab: {fileID: 289326288506908765, guid: 0363948062866154ab997fa31b1f380d,
+    type: 3}
+  m_DetectionMode: -1
+--- !u!114 &1227435124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1227435120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae542be93d1245a469981b40b0cdf7e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardObject: {fileID: 1476917575458480240, guid: b10e1f678e0024d4eaf2e85f10f7a106,
+    type: 3}
+--- !u!114 &1227435125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1227435120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa17d122634046b4a8e23048891fafc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1001 &6916018899680151931
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 289326288506908765, guid: 0363948062866154ab997fa31b1f380d,
+        type: 3}
+      propertyPath: m_Name
+      value: ARPlane
+      objectReference: {fileID: 0}
+    - target: {fileID: 7116293122564949452, guid: 0363948062866154ab997fa31b1f380d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7116293122564949452, guid: 0363948062866154ab997fa31b1f380d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7116293122564949452, guid: 0363948062866154ab997fa31b1f380d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7116293122564949452, guid: 0363948062866154ab997fa31b1f380d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7116293122564949452, guid: 0363948062866154ab997fa31b1f380d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7116293122564949452, guid: 0363948062866154ab997fa31b1f380d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7116293122564949452, guid: 0363948062866154ab997fa31b1f380d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7116293122564949452, guid: 0363948062866154ab997fa31b1f380d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7116293122564949452, guid: 0363948062866154ab997fa31b1f380d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7116293122564949452, guid: 0363948062866154ab997fa31b1f380d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7116293122564949452, guid: 0363948062866154ab997fa31b1f380d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0363948062866154ab997fa31b1f380d, type: 3}
