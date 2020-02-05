@@ -429,7 +429,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1227435120}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 645340351}
@@ -463,8 +463,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae542be93d1245a469981b40b0cdf7e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardObject: {fileID: 1476917575458480240, guid: b10e1f678e0024d4eaf2e85f10f7a106,
+  cardObject: {fileID: 2109040664959072153, guid: f3e3616a3ae23df4382abeceef0396e7,
     type: 3}
+  c: {fileID: 645340347}
 --- !u!114 &1227435125
 MonoBehaviour:
   m_ObjectHideFlags: 0

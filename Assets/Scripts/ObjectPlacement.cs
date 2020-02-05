@@ -10,6 +10,7 @@ public class ObjectPlacement : MonoBehaviour
 {
     public GameObject cardObject;
     private GameObject spawner;
+    public Camera c;
 
     private ARRaycastManager ar_RaycastManager;
     private Vector2 touchPosition;
@@ -48,6 +49,7 @@ public class ObjectPlacement : MonoBehaviour
             if(spawner == null)
             {
                 spawner = Instantiate(cardObject, hitPose.position, hitPose.rotation);
+                spawner.GetComponent<Concept>().setCamera(c);
             }
             else
             {
