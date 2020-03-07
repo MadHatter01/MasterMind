@@ -23,6 +23,14 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
+    UnityEngine.UI.dll:
+    - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.CanvasScaler
+    - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.Image
+    - UnityEngine.UI.InputField
+    - UnityEngine.UI.Text
   sceneClasses:
     Assets/Scenes/Scene01.unity:
     - Class: 1
@@ -47,6 +55,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
     - Class: 104
@@ -54,40 +64,64 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11200}
+      Script: {instanceID: 11176}
     - Class: 114
-      Script: {instanceID: 11466}
+      Script: {instanceID: 11190}
     - Class: 114
-      Script: {instanceID: 11620}
+      Script: {instanceID: 11370}
     - Class: 114
-      Script: {instanceID: 11862}
+      Script: {instanceID: 11416}
     - Class: 114
-      Script: {instanceID: 11958}
+      Script: {instanceID: 11456}
     - Class: 114
-      Script: {instanceID: 12140}
+      Script: {instanceID: 11610}
     - Class: 114
-      Script: {instanceID: 12664}
+      Script: {instanceID: 11852}
     - Class: 114
-      Script: {instanceID: 12708}
+      Script: {instanceID: 11908}
     - Class: 114
-      Script: {instanceID: 12742}
+      Script: {instanceID: 11948}
     - Class: 114
-      Script: {instanceID: 12914}
+      Script: {instanceID: 12130}
     - Class: 114
-      Script: {instanceID: 13068}
+      Script: {instanceID: 12654}
     - Class: 114
-      Script: {instanceID: 13240}
+      Script: {instanceID: 12672}
     - Class: 114
-      Script: {instanceID: 13380}
+      Script: {instanceID: 12698}
+    - Class: 114
+      Script: {instanceID: 12732}
+    - Class: 114
+      Script: {instanceID: 12904}
+    - Class: 114
+      Script: {instanceID: 13028}
+    - Class: 114
+      Script: {instanceID: 13058}
+    - Class: 114
+      Script: {instanceID: 13230}
+    - Class: 114
+      Script: {instanceID: 13370}
+    - Class: 114
+      Script: {instanceID: 13480}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 136
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
     - Class: 258
       Script: {instanceID: 0}
@@ -749,4 +783,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/Scenes/Scene01.unity
-  playerPath: C:/Users/VaishuBox/Desktop/cc/test.apk
+  playerPath: H:/Unity Projects/MasterMind/mastermind.apk

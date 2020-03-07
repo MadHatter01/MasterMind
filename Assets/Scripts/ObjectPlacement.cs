@@ -14,6 +14,7 @@ public class ObjectPlacement : MonoBehaviour
 
     private ARRaycastManager ar_RaycastManager;
     private Vector2 touchPosition;
+    private bool touchDown;
 
     static List<ARRaycastHit> hits = new List<ARRaycastHit>();
 
@@ -35,9 +36,15 @@ public class ObjectPlacement : MonoBehaviour
         return false;
     }
 
+    void Start()
+    {
+        touchDown = false;
+    }
+
     // Update is called once per frame
     void Update()
     {
+
         if(!TryGetTouchPosition(out Vector2 touchPosition))
         {
             return;
@@ -46,8 +53,9 @@ public class ObjectPlacement : MonoBehaviour
         {
             var hitPose = hits[0].pose;
 
-            if(spawner == null)
+            if(spawner == null && touchDown == false)
             {
+                touchDown = true;
                 spawner = Instantiate(cardObject, hitPose.position, hitPose.rotation);
                 spawner.GetComponent<Concept>().setCamera(c);
             }
@@ -56,6 +64,22 @@ public class ObjectPlacement : MonoBehaviour
                 spawner.transform.position = hitPose.position;
             }
         }
-        
+
+        if (Input.touchCount > 0)
+        {
+            Touch touch = Input.GetTouch(0);
+
+            // Handle finger movements based on TouchPhase
+            switch (touch.phase)
+            {
+                //detects touch beginning
+                case TouchPhase.Began:
+                    break;
+                //detects touch ending
+                case TouchPhase.Ended:
+                    //touchDown = false;
+                    break;
+            }
+        }
     }
 }

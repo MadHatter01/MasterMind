@@ -34,19 +34,19 @@ public class AdditionButton : MonoBehaviour
             if (3 == position)
             {
                 Debug.Log("Pressed right");
-                Instantiate(concept, self.transform.position + new Vector3(1, 0, 0), Quaternion.identity);
-                Instantiate(lineH, self.transform.position + new Vector3(.3f, 0, 0), Quaternion.identity);
+                Instantiate(concept, self.transform.position + new Vector3(2, 0, 0), Quaternion.identity);
+                Instantiate(lineH, self.transform.position + new Vector3(.6f, 0, 0), Quaternion.identity);
             }
             else if (position == 2)
             {
                 Debug.Log("Pressed left");
-                Instantiate(concept, self.transform.position + new Vector3(-1, 0, 0), Quaternion.identity);
-                Instantiate(lineH, self.transform.position + new Vector3(-.3f, 0, 0), Quaternion.identity);
+                Instantiate(concept, self.transform.position + new Vector3(-2, 0, 0), Quaternion.identity);
+                Instantiate(lineH, self.transform.position + new Vector3(-.6f, 0, 0), Quaternion.identity);
             }
             else
             {
                 Debug.Log("Pressed top");
-                Instantiate(concept, self.transform.position + new Vector3(0, 1, 0), Quaternion.identity);
+                Instantiate(concept, self.transform.position + new Vector3(0, .8f, 0), Quaternion.identity);
                 Instantiate(lineV, self.transform.position + new Vector3(0, .3f, 0), Quaternion.identity);
             }
 
@@ -88,8 +88,8 @@ public class AdditionButton : MonoBehaviour
         else
         {
             Debug.Log("Pressed top");
-            Instantiate(concept, self.transform.position + new Vector3(0, 2, 0), Quaternion.identity);
-            Instantiate(lineV, self.transform.position + new Vector3(0, .6f, 0), Quaternion.identity);
+            Instantiate(concept, self.transform.position + new Vector3(0, .8f, 0), Quaternion.identity);
+            Instantiate(lineV, self.transform.position + new Vector3(0, .3f, 0), Quaternion.identity);
         }
     }
     bool TryGetTouchPosition(out Vector2 touchPosition)
