@@ -1,11 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.ARFoundation;
+using UnityEngine.XR.ARSubsystems;
 
 public class Concept : MonoBehaviour
 {
     public GameObject button1, button2, button3, self;
     public Camera c;
+    private ARRaycastManager ar_RaycastManager;
+    private GameObject spawner;
+
+    static List<ARRaycastHit> hits = new List<ARRaycastHit>();
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,9 +40,35 @@ public class Concept : MonoBehaviour
         this.c = c;
     }
 
+    bool TryGetTouchPosition(out Vector2 touchPosition)
+    {
+        if (Input.touchCount > 0)
+        {
+            touchPosition = Input.GetTouch(0).position;
+            return true;
+        }
+        touchPosition = default;
+        return false;
+    }
+
     // Update is called once per frame
     void Update()
     {
-        
+        Touch touch = Input.GetTouch(0);
+
+        if (Input.touchCount > 0)
+        {
+            if (touch.phase == TouchPhase.Began)
+            {
+                Ray ray = c.ScreenPointToRay(touch.position);
+                RaycastHit hitObject;
+
+                if(Physics.Raycast(ray, out hitObject))
+                {
+
+                }
+            }
+        }
+
     }
 }

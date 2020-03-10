@@ -68,28 +68,29 @@ public class AdditionButton : MonoBehaviour
 
     public void setCamera(Camera c)
     {
-        //cam = c;
+        //cam = c;d
     }
 
     void OnMouseDown()
     {
+        GameObject temp;
         if (3 == position)
         {
             Debug.Log("Pressed right");
-            Instantiate(concept, self.transform.position + new Vector3(2, 0, 0), Quaternion.identity);
-            Instantiate(lineH, self.transform.position + new Vector3(.6f, 0, 0), Quaternion.identity);
+            temp = Instantiate(concept, self.transform.position + gameObject.transform.TransformDirection(new Vector3(2, 0, 0)), self.transform.rotation * Quaternion.Euler(-90, 0, 0));
+            Instantiate(lineH, self.transform.position + gameObject.transform.TransformDirection(new Vector3(.6f, 0, 0)), self.transform.rotation * Quaternion.Euler(-90, 0, 90));
         }
         else if (position == 2)
         {
             Debug.Log("Pressed left");
-            Instantiate(concept, self.transform.position + new Vector3(-2, 0, 0), Quaternion.identity);
-            Instantiate(lineH, self.transform.position + new Vector3(-.6f, 0, 0), Quaternion.identity);
+            Instantiate(concept, self.transform.position + gameObject.transform.TransformDirection(new Vector3(-2, 0, 0)), self.transform.rotation * Quaternion.Euler(-90, 0, 0));
+            Instantiate(lineH, self.transform.position + gameObject.transform.TransformDirection(new Vector3(-.6f, 0, 0)), self.transform.rotation * Quaternion.Euler(-90, 0, 90));
         }
         else
         {
             Debug.Log("Pressed top");
-            Instantiate(concept, self.transform.position + new Vector3(0, .8f, 0), Quaternion.identity);
-            Instantiate(lineV, self.transform.position + new Vector3(0, .3f, 0), Quaternion.identity);
+            Instantiate(concept, self.transform.position + gameObject.transform.TransformDirection(new Vector3(0, 0, -.8f)), self.transform.rotation * Quaternion.Euler(-90, 0, 0));
+            Instantiate(lineV, self.transform.position + gameObject.transform.TransformDirection(new Vector3(0, 0, -.4f)), self.transform.rotation * Quaternion.Euler(-90, 0, 0));
         }
     }
     bool TryGetTouchPosition(out Vector2 touchPosition)

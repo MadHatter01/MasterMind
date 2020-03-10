@@ -63,6 +63,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\AddCard.cs" />
     <Compile Include="Assets\Scripts\AdditionButton.cs" />
     <Compile Include="Assets\Scripts\Concept.cs" />
     <Compile Include="Assets\Scripts\ObjectPlacement.cs" />

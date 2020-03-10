@@ -45,15 +45,25 @@ public class ObjectPlacement : MonoBehaviour
     void Update()
     {
 
+
+
         if(!TryGetTouchPosition(out Vector2 touchPosition))
         {
             return;
         }
-        if(ar_RaycastManager.Raycast(touchPosition, hits, TrackableType.PlaneWithinPolygon))
+
+        if (Input.touchCount > 0)
+        {
+            Touch touch = Input.GetTouch(0);
+            if (touch.phase == TouchPhase.Ended)
+                touchDown = false;
+        }
+
+        if (ar_RaycastManager.Raycast(touchPosition, hits, TrackableType.PlaneWithinPolygon))
         {
             var hitPose = hits[0].pose;
 
-            if(spawner == null && touchDown == false)
+            if(spawner == null && !touchDown)
             {
                 touchDown = true;
                 spawner = Instantiate(cardObject, hitPose.position, hitPose.rotation);
@@ -62,23 +72,6 @@ public class ObjectPlacement : MonoBehaviour
             else
             {
                 spawner.transform.position = hitPose.position;
-            }
-        }
-
-        if (Input.touchCount > 0)
-        {
-            Touch touch = Input.GetTouch(0);
-
-            // Handle finger movements based on TouchPhase
-            switch (touch.phase)
-            {
-                //detects touch beginning
-                case TouchPhase.Began:
-                    break;
-                //detects touch ending
-                case TouchPhase.Ended:
-                    //touchDown = false;
-                    break;
             }
         }
     }

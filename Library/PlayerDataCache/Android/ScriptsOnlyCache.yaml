@@ -1,6 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - AddCard
     - AdditionButton
     - Concept
     - ObjectPlacement
@@ -26,6 +27,7 @@ ScriptsOnlyBuild:
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
@@ -84,25 +86,29 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12130}
     - Class: 114
-      Script: {instanceID: 12654}
+      Script: {instanceID: 12222}
     - Class: 114
-      Script: {instanceID: 12672}
+      Script: {instanceID: 12436}
     - Class: 114
-      Script: {instanceID: 12698}
+      Script: {instanceID: 12656}
     - Class: 114
-      Script: {instanceID: 12732}
+      Script: {instanceID: 12674}
     - Class: 114
-      Script: {instanceID: 12904}
+      Script: {instanceID: 12700}
     - Class: 114
-      Script: {instanceID: 13028}
+      Script: {instanceID: 12734}
     - Class: 114
-      Script: {instanceID: 13058}
+      Script: {instanceID: 12906}
     - Class: 114
-      Script: {instanceID: 13230}
+      Script: {instanceID: 13030}
     - Class: 114
-      Script: {instanceID: 13370}
+      Script: {instanceID: 13060}
     - Class: 114
-      Script: {instanceID: 13480}
+      Script: {instanceID: 13232}
+    - Class: 114
+      Script: {instanceID: 13372}
+    - Class: 114
+      Script: {instanceID: 13482}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -432,6 +438,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 1c9b544a0046f8b0a847286c67ff7f99
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AddCard
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
