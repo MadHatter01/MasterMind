@@ -8,6 +8,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Scene01.unity
     guid: 3627908e0c75ace4abd041c349f4c7fd
+  - enabled: 1
+    path: Assets/Scenes/scene2.unity
+    guid: 51acf4336fcd1ea46a681cdd073a9a85
   m_configObjects:
     com.unity.xr.arcore.PlayerSettings: {fileID: 11400000, guid: 3a6cf2a481b14fa4f9c193109e3088fa,
       type: 2}
