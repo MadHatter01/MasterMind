@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
@@ -77,20 +77,20 @@ public class AdditionButton : MonoBehaviour
         if (3 == position)
         {
             Debug.Log("Pressed right");
-            temp = Instantiate(concept, self.transform.position + gameObject.transform.TransformDirection(new Vector3(2, 0, 0)), self.transform.rotation * Quaternion.Euler(-90, 0, 0));
-            Instantiate(lineH, self.transform.position + gameObject.transform.TransformDirection(new Vector3(.6f, 0, 0)), self.transform.rotation * Quaternion.Euler(-90, 0, 90));
+            temp = Instantiate(concept, self.transform.position + gameObject.transform.TransformDirection(new Vector3(1, 0, 0)), self.transform.rotation * Quaternion.Euler(-90, 0, 0));
+            Instantiate(lineH, self.transform.position + gameObject.transform.TransformDirection(new Vector3(.3f, 0, 0)), self.transform.rotation * Quaternion.Euler(-90, 0, 90));
         }
         else if (position == 2)
         {
             Debug.Log("Pressed left");
-            Instantiate(concept, self.transform.position + gameObject.transform.TransformDirection(new Vector3(-2, 0, 0)), self.transform.rotation * Quaternion.Euler(-90, 0, 0));
-            Instantiate(lineH, self.transform.position + gameObject.transform.TransformDirection(new Vector3(-.6f, 0, 0)), self.transform.rotation * Quaternion.Euler(-90, 0, 90));
+            Instantiate(concept, self.transform.position + gameObject.transform.TransformDirection(new Vector3(-1, 0, 0)), self.transform.rotation * Quaternion.Euler(-90, 0, 0));
+            Instantiate(lineH, self.transform.position + gameObject.transform.TransformDirection(new Vector3(-.3f, 0, 0)), self.transform.rotation * Quaternion.Euler(-90, 0, 90));
         }
         else
         {
             Debug.Log("Pressed top");
-            Instantiate(concept, self.transform.position + gameObject.transform.TransformDirection(new Vector3(0, 0, -.8f)), self.transform.rotation * Quaternion.Euler(-90, 0, 0));
-            Instantiate(lineV, self.transform.position + gameObject.transform.TransformDirection(new Vector3(0, 0, -.4f)), self.transform.rotation * Quaternion.Euler(-90, 0, 0));
+            Instantiate(concept, self.transform.position + gameObject.transform.TransformDirection(new Vector3(0, 0, -.55f)), self.transform.rotation * Quaternion.Euler(-90, 0, 0));
+            Instantiate(lineV, self.transform.position + gameObject.transform.TransformDirection(new Vector3(0, 0, -.25f)), self.transform.rotation * Quaternion.Euler(-90, 0, 0));
         }
     }
     bool TryGetTouchPosition(out Vector2 touchPosition)
